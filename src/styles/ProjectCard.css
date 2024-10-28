@@ -1,0 +1,72 @@
+.card {
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+}
+
+.card-body {
+    box-shadow: #148d8d 0 0 5px 1px, #148d8d 0 0 1px;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px; /* Sabit yüksekliği belirtiyoruz */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family:'Times New Roman', Times, serif;
+    overflow: hidden; /* Taşma durumunda kaymasını engeller */
+}
+
+.card- :hover{
+
+    transform: scale(1.02);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.card-text {
+    flex-grow: 1; /* Metin alanının kartın kalan alanını doldurmasını sağlar */
+    overflow-y: auto; /* Uzun metinler için dikey kaydırma ekler */
+    max-height: 60px; /* Açıklama alanına sabit bir yükseklik sınırı koyar */
+    text-align: justify;
+    padding: 10px 0;
+}
+.project-list {
+    display: flex;
+    justify-content: space-around; /* Resimleri yatay olarak sıralar ve aralarında boşluk bırakır */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.project-photo img {
+    
+    width: 80px; /* Resmi küçültür, boyutunu ayarlayabilirsin */
+    height: auto;
+    border-radius: 4px; /* Köşeleri biraz yuvarlatır */
+    transition: transform 0.3s ease; /* Hover efekti için yumuşak geçiş */
+}
+
+.project-photo img:hover {
+    transform: scale(1.2); /* Fare üzerine geldiğinde resmi biraz büyütür */
+}
+
+
+.down{
+    text-align: center;
+}
+
+.down a{
+  font-size: 18px;
+  color: black;
+  justify-content: center;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e0e1dd;  
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px; /* Sağda boşluk bırak */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Markanın kalın olması için */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+      margin-top: 10px; /* Küçük ekranlarda üstte boşluk bırak */
+  }
+}
+.main-body{
+    background-color: #e0e1dd;
+    margin-top: 50px;
+    
+}
+
+.body-container img{
+
+    border-radius: 50%;
+
+    
+}
+
+
+/* photo-text sınıfını flex container olarak ayarlayın ve hizalayın */
+.photo-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Aradaki boşluk */
+}
+
+
+.text-container-main {
+    margin-top: -100px; /* Buradaki değeri ihtiyacınıza göre ayarlayın */
+}
+/* Profil resminin stilini ayarlayın */
+.profil-container img {
+    border-radius: 50%;
+    height: 275px;
+    width: 275px;
+}
+
+/* Text container için yazı stilini ayarlayın */
+.text-container-main h3 {
+    margin: 0;
+    font-size: 34px;
+    font-family:'Times New Roman', Times, serif;
+    color : #415a77;
+}
+
+
+.typewriter-container {
+    margin-top: 20px;
+    color : #415a77;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+.proverb{
+    display: block;
+    padding-top: 25px;
+    color: #778da9;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Aradaki boşluk */
+    margin-top: 25px;
+}
+
+.code-tabs{
+    
+    border:1px solid black;
+    
+}
+.cotact-btn-container{
+
+  
+  border-radius: 8px;
+  border:1px solid black;
+  color: #415a77;
+}
+.contact-link{
+
+  width: 50px;
+  height: 150px;
+  color: #415a77;
+  
+  
+}
+
+.contact-button{
+  background-color: #acb7c3; /* Başlangıç arka plan rengi */
+  color: #415a77;
+ 
+  padding: 15px 50px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  transition: background-color 1s ease;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  
+}
+
+/* .contact-button:hover {
+    background-color: #acb7c3;
+    animation: colorchange 1s infinite; 
+    color:#acb7c3;
+    width: 150px;
+    height: 75px;
+  } */
+
+
+
+  @keyframes colorchange {
+    0% {
+      background-color: #778da9;
+    }
+    50% {
+      background-color: #415a77;
+    }
+    100% {
+      background-color: #1b263b;
+    }
+  }
+
+
+  .code-tabs{
+
+    padding: 20px 50px 20px;
+    border-radius: 10px;
+    border-color: transparent;
+
+    background-color: #acb7c3;
+  }
+  .code-tabs span{
+    background-color: #acb7c3;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .footer-body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Dikeyde ortalama */
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .social-footer {
+    display: flex;
+    gap: 8px;
+    font-size: 24px; /* İkonların boyutunu büyüt */
+    color: black;
+  }
+  
+  .text-footer {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  /* İkonlara boyut eklemek için */
+  .social-footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* İkonların boyutunu büyüt */
+    color: black;
+  }
+  
+
+ 

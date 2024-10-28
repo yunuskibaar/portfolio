@@ -1,0 +1,99 @@
+#about-container {
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: #148d8d 0 0 5px 1px, #148d8d 0 0 1px;
+  }
+  
+  
+  .about-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .left {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right {
+    width: calc(60% - 40px);
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+  
+  .profil-pic {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+  }
+  .ben{
+    margin-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .skills-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: #148d8d 0 0 5px 1px, #148d8d 0 0 1px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .skills-text {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#415a77;
+  }
+  
+  .about-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: normal;
+    color:#415a77
+  }
+  
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .about-box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
+  
+  
