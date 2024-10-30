@@ -87,7 +87,7 @@ const MainPage = () => {
 
             <div className="cotact-btn-container">
               <a className='contanct-link'
-                href="https://wa.me/905060566567?text=Merhaba,%20sizinle%20iletişime%20geçmek%20istiyorum."
+                href="https://wa.me/905060566567?"
                 target="_blank"
               >
                 <button className="btn contact-button">Bana Ulaş</button>

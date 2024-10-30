@@ -1,20 +1,51 @@
-.project-container{
-
+/* Varsayılan Stil */
+.project-container {
     margin: 0px 15px 0px 15px;
 }
 
-#projects{
+#projects {
     justify-content: center;
     display: flex;
-
 }
 
-@media (max-width: 768){
+#projects .row {
+    justify-content: center;
+}
 
-    #projects .row{
-        justify-content: center;
+/* Tablet Boyutu İçin (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .col {
+        flex: 0 0 50%; /* Tablet için her satıra 2 kart */
+        max-width: 50%;
     }
 
-}
-    
+    #projects {
+        width: 90%; /* Tablet için projeleri biraz daha daralt */
+    }
 
+    .project-container {
+        margin: 10px 5px; /* Kart aralarındaki boşlukları küçült */
+    }
+}
+
+/* Mobil Boyutu İçin (max-width: 768px) */
+@media (max-width: 768px) {
+    .col {
+        flex: 0 0 100%; /* Mobil için her satıra 1 kart */
+        max-width: 100%;
+    }
+
+    #projects {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .project-container {
+        margin: 10px 0; /* Kart aralarındaki boşlukları küçült */
+    }
+
+    #projects .row {
+        flex-direction: column;
+        align-items: center; /* Kartları ortala */
+    }
+}
